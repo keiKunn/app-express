@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action="/registAction" method="POST">
+      <p>
+        ユーザ名：<input type="text" name="username">
+      </p>
+      <p>
+        メールアドレス：<input type="text" name="emailaddress">
+      </p>
+      <p>
+        パスワード：<input type="text" name="password">
+      </p>
+      <p>
+        パスワード再確認：<input type="text" name="confirm_password">
+      </p>
+      <input type="submit" value="登録">
+
+      <p><a href="<%= loginLink.href %>"><%=loginLink.text %></a></p>
+    </form>
+  </body>
+</html>
