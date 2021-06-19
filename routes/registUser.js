@@ -3,6 +3,6 @@ const router = express.Router()
 const registUserController = require('../controllers/RegistUserController')
 
 /* GET registuser. */
-router.get('/registUser', registUserController.doGetRegistUser)
+router.get('/', registUserController.doGetRegistUser)
 
 module.exports = router
